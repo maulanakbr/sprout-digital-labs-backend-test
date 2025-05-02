@@ -1,4 +1,4 @@
-import { Piece } from '../models/piece';
+import { Piece } from '../models/pieces/piece';
 
 export type Color = 'white' | 'black';
 

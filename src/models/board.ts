@@ -1,5 +1,10 @@
-import type { Color, Grid } from '../types/base';
-import { King, Queen, Rook, Bishop, Knight, Pawn } from './piece';
+import type { Color, Grid } from '../types';
+import { Bishop } from './pieces/bishop';
+import { King } from './pieces/king';
+import { Knight } from './pieces/knight';
+import { Pawn } from './pieces/pawn';
+import { Queen } from './pieces/queen';
+import { Rook } from './pieces/rook';
 
 export class Board {
   grid: Grid = [];
