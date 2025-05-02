@@ -6,7 +6,7 @@
   "scripts": {
     "format": "prettier --write .",
     "test": "pnpm exec jest",
-    "run-game": "pnpm exec ts-node src/index.ts"
+    "start": "pnpm exec ts-node src/index.ts"
   },
   "keywords": [],
   "author": "Maulana Akbar Yudistika",
