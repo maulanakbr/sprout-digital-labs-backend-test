@@ -1,4 +1,4 @@
-import type { Color, Grid, MovePosition } from '../../types';
+import type { Color, Grid, MoveFromPosition, MoveToPosition } from '../../types';
 import { Piece } from './piece';
 
 export class Pawn extends Piece {
@@ -6,7 +6,7 @@ export class Pawn extends Piece {
     super(color, 'P');
   }
 
-  canMove([fx, fy]: MovePosition, [tx, ty]: MovePosition, board: Grid) {
+  canMove([fx, fy]: MoveFromPosition, [tx, ty]: MoveToPosition, board: Grid) {
     const direction = this.color === 'white' ? -1 : 1;
     const startRow = this.color === 'white' ? 6 : 1;
 

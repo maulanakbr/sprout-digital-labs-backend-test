@@ -1,4 +1,4 @@
-import type { Color, Grid, MovePosition } from '../../types';
+import type { Color, Grid, MoveFromPosition, MoveToPosition } from '../../types';
 import { Piece } from './piece';
 
 export class Rook extends Piece {
@@ -6,7 +6,7 @@ export class Rook extends Piece {
     super(color, 'R');
   }
 
-  canMove([fx, fy]: MovePosition, [tx, ty]: MovePosition, board: Grid) {
+  canMove([fx, fy]: MoveFromPosition, [tx, ty]: MoveToPosition, board: Grid) {
     if (fx !== tx && fy !== ty) return false;
 
     const stepX = fx === tx ? 0 : fx < tx ? 1 : -1;

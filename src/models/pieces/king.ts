@@ -1,4 +1,4 @@
-import type { Color, MovePosition } from '../../types';
+import type { Color, MoveFromPosition, MoveToPosition } from '../../types';
 import { Piece } from './piece';
 
 export class King extends Piece {
@@ -6,7 +6,7 @@ export class King extends Piece {
     super(color, 'K');
   }
 
-  canMove([fx, fy]: MovePosition, [tx, ty]: MovePosition) {
+  canMove([fx, fy]: MoveFromPosition, [tx, ty]: MoveToPosition) {
     return Math.abs(fx - tx) <= 1 && Math.abs(fy - ty) <= 1;
   }
 }

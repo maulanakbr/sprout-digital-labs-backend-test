@@ -1,4 +1,4 @@
-import type { Color, Grid, MovePosition } from '../../types';
+import type { Color, Grid, MoveFromPosition, MoveToPosition } from '../../types';
 
 export abstract class Piece {
   constructor(
@@ -6,5 +6,5 @@ export abstract class Piece {
     public symbol: string
   ) {}
 
-  abstract canMove(from: MovePosition, to: MovePosition, board: Grid): boolean;
+  abstract canMove(from: MoveFromPosition, to: MoveToPosition, board: Grid): boolean;
 }
