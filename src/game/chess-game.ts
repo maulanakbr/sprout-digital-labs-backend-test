@@ -1,9 +1,10 @@
 import { Board } from '../models/board';
+import type { Color } from '../types';
 import { parseInput } from '../utils/input-parser';
 
 export class ChessGame {
   board = new Board();
-  currentTurn: 'white' | 'black' = 'white';
+  currentTurn: Color = 'white';
 
   playMove(input: string) {
     const parsed = parseInput(input);
