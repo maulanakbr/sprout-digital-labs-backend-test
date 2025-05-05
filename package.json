@@ -8,7 +8,10 @@
     "test": "pnpm exec jest",
     "start": "pnpm exec ts-node src/index.ts"
   },
-  "keywords": [],
+  "keywords": [
+    "chess",
+    "node"
+  ],
   "author": "Maulana Akbar Yudistika",
   "license": "ISC",
   "packageManager": "pnpm@10.6.3",
