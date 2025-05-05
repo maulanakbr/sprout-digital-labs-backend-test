@@ -21,6 +21,7 @@ export class Bishop extends Piece {
       y += stepY;
     }
 
-    return true;
+    const targetPiece = board[tx][ty];
+    return !targetPiece || targetPiece.color !== this.color;
   }
 }
