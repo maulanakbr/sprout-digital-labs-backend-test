@@ -7,6 +7,8 @@ export class King extends Piece {
   }
 
   canMove([fx, fy]: MoveFromPosition, [tx, ty]: MoveToPosition) {
-    return Math.abs(fx - tx) <= 1 && Math.abs(fy - ty) <= 1;
+    const dx = Math.abs(fx - tx);
+    const dy = Math.abs(fy - ty);
+    return (dx !== 0 || dy !== 0) && dx <= 1 && dy <= 1;
   }
 }
